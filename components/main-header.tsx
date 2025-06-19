@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function MainHeader() {
   return (
-    <header className="flex items-center justify-between p-4 bg-gray-800 text-white">
+    <header className="flex items-center justify-between p-4 bg-gray-800 text-white fixed top-0 left-0 w-full z-20 shadow-md">
       <Link href="/" className="text-2xl font-bold hover:underline">
         <h1 className="text-xl font-bold">The Store</h1>
       </Link>
