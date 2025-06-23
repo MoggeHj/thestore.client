@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import MainHeader from "@root/components/main-header";
+import MainHeader from "@root/components/main-header/main-header";
 import Footer from "@root/components/footer";
-import Background from "@root/components/background";
+import MainBackground from "@root/components/mainBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,17 +29,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        <Background />
-        <div className="relative z-10">
+        <MainBackground />
+        <div className="relative z-10 flex flex-col flex-1">
           <MainHeader />
-          <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+          <main className="flex-1 flex flex-col items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] w-full">
             {children}
-          </div>
-          <div className="w-full bg-black bg-opacity-60 backdrop-blur-sm p-4 mt-8">
+          </main>
+          <footer className="w-full bg-black bg-opacity-60 backdrop-blur-sm p-4 mt-8">
             <Footer />
-          </div>
+          </footer>
         </div>
       </body>
     </html>
