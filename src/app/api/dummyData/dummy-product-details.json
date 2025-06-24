@@ -4,7 +4,7 @@
     "name": "Hoodie",
     "price": 49.99,
     "imageUrl": "/images/products/hoodie-blue.png",
-    "description": "A cozy blue hoodie.",
+    "description": "A cozy blue hoodie. Crafted from premium cotton, it offers exceptional comfort and warmth. The vibrant blue color adds a stylish touch to any outfit. Its relaxed fit makes it perfect for layering during chilly days. Durable stitching ensures long-lasting wear. The spacious front pocket is ideal for keeping your hands warm or storing essentials. Ribbed cuffs and hem provide a snug, secure fit.",
     "variants": [
       {
         "id": 1,
