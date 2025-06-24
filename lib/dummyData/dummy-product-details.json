@@ -9,9 +9,9 @@
       {
         "id": 1,
         "colorName": "Blue",
-        "size": 2,
+        "size": 1,
         "imageUrls": ["/images/products/hoodie-blue.png"],
-        "stock": 10
+        "stock": 0
       },
       {
         "id": 101,
@@ -19,6 +19,13 @@
         "size": 2,
         "imageUrls": ["/images/products/hoodie-red.png"],
         "stock": 5
+      },
+      {
+        "id": 1010,
+        "colorName": "Black",
+        "size": 3,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 2
       }
     ]
   },

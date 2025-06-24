@@ -31,6 +31,23 @@ export enum Size {
   XXL,
 }
 
+export function GetSizeString(size: number | undefined): string | undefined {
+  switch (size) {
+    case 1:
+      return "Small";
+    case 2:
+      return "Medium";
+    case 3:
+      return "Large";
+    case 4:
+      return "XL";
+    case 5:
+      return "XXL";
+    default:
+      return undefined;
+  }
+}
+
 // export interface CategoryDto {
 //   id?: number;
 //   categoryType: CategoryType;

@@ -1,6 +1,6 @@
 import { ProductDetailsDto, ProductDto } from "./dtos/productDtos";
-import dummyProducts from "@/app/api/dummyData/dummy-products.json";
-import dummyProductDetails from "@/app/api/dummyData/dummy-product-details.json";
+import dummyProducts from "@root/lib/dummyData/dummy-products.json";
+import dummyProductDetails from "@root/lib/dummyData/dummy-product-details.json";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 const USE_DUMMY_PRODUCTS =
