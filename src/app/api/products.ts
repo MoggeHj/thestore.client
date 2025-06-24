@@ -1,5 +1,6 @@
-import { ProductDto } from "./dtos/productDtos";
+import { ProductDetailsDto, ProductDto } from "./dtos/productDtos";
 import dummyProducts from "@/app/api/dummyData/dummy-products.json";
+import dummyProductDetails from "@/app/api/dummyData/dummy-product-details.json";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 const USE_DUMMY_PRODUCTS =
@@ -23,6 +24,30 @@ export async function fetchProducts(): Promise<ProductDto[]> {
     }
 
     return apiResponse.json();
+  }
+}
+
+export async function fetchProductDetails(
+  id: number
+): Promise<ProductDetailsDto> {
+  if (USE_DUMMY_PRODUCTS) {
+    // Find the product in dummy data
+    const product = dummyProductDetails.find((p) => p.id === id);
+    return Promise.resolve((product as ProductDetailsDto) || null);
+  } else {
+    const response = await fetch(`${API_BASE_URL}/getproductdetails/${id}`, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+      },
+      // credentials: 'include', // Uncomment if you need cookies/auth
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch product details");
+    }
+
+    return response.json();
   }
 }
 

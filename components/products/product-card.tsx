@@ -29,7 +29,7 @@ export default async function ProductCard({
         <Link
           prefetch={true}
           className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-4 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-          href={`/souvenirs/product/${name}`}
+          href={`/souvenirs/product/${id}`}
         >
           View Product
         </Link>

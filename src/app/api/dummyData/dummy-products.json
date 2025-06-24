@@ -1,106 +1,91 @@
 [
   {
     "id": 1,
-    "name": "Blue Hoodie",
-    "description": "A cozy blue hoodie.",
+    "name": "Hoodie",
     "price": 49.99,
     "imageUrl": "/images/products/hoodie-blue.png"
   },
   {
     "id": 2,
-    "name": "Red Hoodie",
-    "description": "A stylish red hoodie.",
+    "name": "Hoodie",
     "price": 54.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 3,
-    "name": "Green Hoodie",
-    "description": "A vibrant green hoodie.",
+    "name": "Hoodie",
     "price": 52.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 4,
-    "name": "Black Hoodie",
-    "description": "A classic black hoodie.",
+    "name": "Hoodie",
     "price": 59.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 5,
-    "name": "White Hoodie",
-    "description": "A clean white hoodie.",
+    "name": "Hoodie",
     "price": 47.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 6,
-    "name": "Yellow Hoodie",
-    "description": "A bright yellow hoodie.",
+    "name": "Hoodie",
     "price": 55.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 7,
-    "name": "Purple Hoodie",
-    "description": "A stylish purple hoodie.",
+    "name": "Hoodie",
     "price": 53.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 8,
-    "name": "Pink Hoodie",
-    "description": "A trendy pink hoodie.",
+    "name": "Hoodie",
     "price": 51.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 9,
-    "name": "Gray Hoodie",
-    "description": "A comfortable gray hoodie.",
+    "name": "Hoodie",
     "price": 50.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 10,
-    "name": "Orange Hoodie",
-    "description": "A cheerful orange hoodie.",
+    "name": "Hoodie",
     "price": 56.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 11,
-    "name": "Brown Hoodie",
-    "description": "A warm brown hoodie.",
+    "name": "Hoodie",
     "price": 58.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 12,
-    "name": "Teal Hoodie",
-    "description": "A cool teal hoodie.",
+    "name": "Hoodie",
     "price": 57.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 13,
-    "name": "Navy Hoodie",
-    "description": "A deep navy hoodie.",
+    "name": "Hoodie",
     "price": 60.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 14,
-    "name": "Maroon Hoodie",
-    "description": "A rich maroon hoodie.",
+    "name": "Hoodie",
     "price": 62.99,
     "imageUrl": "/images/products/hoodie-red.png"
   },
   {
     "id": 15,
-    "name": "Cyan Hoodie",
-    "description": "A bright cyan hoodie.",
+    "name": "Hoodie",
     "price": 63.99,
     "imageUrl": "/images/products/hoodie-red.png"
   }

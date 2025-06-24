@@ -1,0 +1,347 @@
+[
+  {
+    "id": 1,
+    "name": "Hoodie",
+    "price": 49.99,
+    "imageUrl": "/images/products/hoodie-blue.png",
+    "description": "A cozy blue hoodie.",
+    "variants": [
+      {
+        "id": 1,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 10
+      },
+      {
+        "id": 101,
+        "colorName": "Red",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Hoodie",
+    "price": 54.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A stylish red hoodie.",
+    "variants": [
+      {
+        "id": 2,
+        "colorName": "Red",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 102,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Hoodie",
+    "price": 52.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A vibrant green hoodie.",
+    "variants": [
+      {
+        "id": 3,
+        "colorName": "Green",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 103,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Hoodie",
+    "price": 51.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A classic black hoodie.",
+    "variants": [
+      {
+        "id": 4,
+        "colorName": "Black",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 104,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Hoodie",
+    "price": 50.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A clean white hoodie.",
+    "variants": [
+      {
+        "id": 5,
+        "colorName": "White",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 105,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Hoodie",
+    "price": 48.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A bright yellow hoodie.",
+    "variants": [
+      {
+        "id": 6,
+        "colorName": "Yellow",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 106,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Hoodie",
+    "price": 47.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A stylish purple hoodie.",
+    "variants": [
+      {
+        "id": 7,
+        "colorName": "Purple",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 107,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Hoodie",
+    "price": 46.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A trendy pink hoodie.",
+    "variants": [
+      {
+        "id": 8,
+        "colorName": "Pink",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 108,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Hoodie",
+    "price": 45.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A comfortable gray hoodie.",
+    "variants": [
+      {
+        "id": 9,
+        "colorName": "Gray",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 109,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Hoodie",
+    "price": 44.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A cheerful orange hoodie.",
+    "variants": [
+      {
+        "id": 10,
+        "colorName": "Orange",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 110,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Hoodie",
+    "price": 43.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A warm brown hoodie.",
+    "variants": [
+      {
+        "id": 11,
+        "colorName": "Brown",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 111,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Hoodie",
+    "price": 42.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A cool teal hoodie.",
+    "variants": [
+      {
+        "id": 12,
+        "colorName": "Teal",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 112,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Hoodie",
+    "price": 41.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A deep navy hoodie.",
+    "variants": [
+      {
+        "id": 13,
+        "colorName": "Navy",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 113,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Hoodie",
+    "price": 40.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A rich maroon hoodie.",
+    "variants": [
+      {
+        "id": 14,
+        "colorName": "Maroon",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 114,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Hoodie",
+    "price": 39.99,
+    "imageUrl": "/images/products/hoodie-red.png",
+    "description": "A bright cyan hoodie.",
+    "variants": [
+      {
+        "id": 15,
+        "colorName": "Cyan",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-red.png"],
+        "stock": 10
+      },
+      {
+        "id": 115,
+        "colorName": "Blue",
+        "size": 2,
+        "imageUrls": ["/images/products/hoodie-blue.png"],
+        "stock": 5
+      }
+    ]
+  }
+]
