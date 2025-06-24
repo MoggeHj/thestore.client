@@ -20,13 +20,13 @@ export default async function ProductDetails({ id }: { id: string }) {
   return (
     <>
       <div className="grid md:grid-cols-5 gap-3">
-        <div className="md:col-span-4">
+        <div className="md:col-span-10">
           <Image
             alt={details.name}
-            className="object-cover rounded-t-lg bg-slate-300 "
+            className="object-cover object-top rounded-t-lg w-full"
             src={details.imageUrl}
-            height="500"
-            width="500"
+            height={350}
+            width={350}
           />
         </div>
       </div>
