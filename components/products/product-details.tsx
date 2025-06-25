@@ -22,9 +22,9 @@ export default async function ProductDetails({ id }: { id: string }) {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-10">
-      <div className="flex flex-col lg:flex-row gap-12 items-start min-h-[700px]">
+      <div className="flex flex-col lg:flex-row gap-12 items-start min-h-[1000px]">
         {/* Image section */}
-        <div className="flex-[1.5] flex flex-col items-stretch justify-center min-w-[600px] max-w-3xl aspect-square bg-white shadow-lg rounded-xl overflow-hidden mx-auto lg:mx-0 mb-8 lg:mb-0 h-full min-h-[800px]">
+        <div className="flex-[1.5] flex flex-col items-stretch justify-start min-w-[600px] max-w-3xl aspect-square overflow-hidden mx-auto lg:mx-0 mb-8 lg:mb-0 min-h-[1000px] bg-transparent">
           <ProductGallery name={details.name} imageUrls={images} />
         </div>
         {/* Details section */}
@@ -32,7 +32,7 @@ export default async function ProductDetails({ id }: { id: string }) {
           <h1 className="font-bold text-3xl lg:text-5xl text-balance mb-2 text-gray-900 dark:text-white">
             {details.name}
           </h1>
-          <div className="text-lg text-gray-700 dark:text-gray-300 mb-8 min-h-[120px] lg:min-h-[180px] w-full">
+          <div className="text-lg text-gray-700 dark:text-gray-300 mb-0 w-full">
             {details.description}
           </div>
           <div className="text-4xl font-bold text-blue-700 dark:text-blue-400 mb-8">

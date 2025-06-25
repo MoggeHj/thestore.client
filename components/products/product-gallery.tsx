@@ -20,11 +20,11 @@ export default function ProductGallery({
   };
 
   return (
-    <div className="flex flex-col items-center w-full max-w-full">
-      <div className="relative aspect-square h-full max-h-[550px] w-full overflow-hidden flex flex-col items-center">
+    <div className="flex flex-col items-center w-full">
+      <div className="relative aspect-square max-h-[800px] w-full overflow-hidden">
         {imageUrls[selectedIdx] && (
           <Image
-            className="h-full w-full object-contain"
+            className="object-contain"
             fill
             sizes="(min-width: 1024px) 66vw, 100vw"
             alt={name + " image " + (selectedIdx + 1)}
@@ -75,7 +75,7 @@ export default function ProductGallery({
                   src={url}
                   width={80}
                   height={80}
-                  className={`rounded border object-contain shadow-md ${
+                  className={`rounded border object-contain  ${
                     selectedIdx === index ? "ring-2 ring-blue-500" : ""
                   }`}
                 />
