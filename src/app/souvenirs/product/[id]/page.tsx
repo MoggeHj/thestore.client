@@ -5,14 +5,10 @@ export default async function ProductPage({
 }: {
   params: { id: string };
 }) {
-  const { id } = await params;
+  const { id } = params;
   return (
-    <>
-      <main className="max-w-5xl mx-auto py-6 px-4 md:px-6">
-        <section className="grid md:grid-cols-2 gap-6 lg:gap-12 items-start py-4 md:py-8 lg:py-12">
-          <ProductDetails id={id}></ProductDetails>
-        </section>
-      </main>
-    </>
+    <main>
+      <ProductDetails id={id} />
+    </main>
   );
 }
