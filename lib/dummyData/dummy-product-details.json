@@ -11,7 +11,7 @@
         "colorName": "Blue",
         "size": 1,
         "imageUrls": ["/images/products/hoodie-blue.png"],
-        "stock": 0
+        "stock": 2
       },
       {
         "id": 101,
@@ -24,7 +24,21 @@
         "id": 1010,
         "colorName": "Black",
         "size": 3,
-        "imageUrls": ["/images/products/hoodie-red.png"],
+        "imageUrls": ["/images/products/hoodie-oslo.webp"],
+        "stock": 2
+      },
+      {
+        "id": 1011,
+        "colorName": "Black",
+        "size": 3,
+        "imageUrls": ["/images/products/hoodie-oslo.png"],
+        "stock": 2
+      },
+      {
+        "id": 1012,
+        "colorName": "Black",
+        "size": 3,
+        "imageUrls": ["/images/products/hoodie-viking.webp"],
         "stock": 2
       }
     ]

@@ -1,13 +1,14 @@
 import { fetchProductDetails } from "@/app/api/products";
-import Image from "next/image";
 import RadioButton from "../radio-button";
 import {
   GetColorRadioButtonVisability,
   GetSizeRadioButtonVisability,
 } from "@root/lib/helpers/radio-button-helper";
+import ProductGallery from "./product-gallery";
 
 export default async function ProductDetails({ id }: { id: string }) {
   const details = await fetchProductDetails(Number(id));
+
   if (!details || !details.variants) {
     return (
       <main>
@@ -17,19 +18,11 @@ export default async function ProductDetails({ id }: { id: string }) {
     );
   }
 
+  const images = details.variants.map((v) => v.imageUrls).flat();
+
   return (
     <>
-      <div className="grid md:grid-cols-5 gap-3">
-        <div className="md:col-span-10">
-          <Image
-            alt={details.name}
-            className="object-cover object-top rounded-t-lg w-full"
-            src={details.imageUrl}
-            height={350}
-            width={350}
-          />
-        </div>
-      </div>
+      <ProductGallery name={details.name} imageUrls={images}></ProductGallery>
       <div className="grid gap-4 md:gap-10">
         <div className="md:flex items-start">
           <div className="grid gap-4">
