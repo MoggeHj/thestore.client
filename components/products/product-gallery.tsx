@@ -1,5 +1,5 @@
 "use client";
-"@heroicons/react/24/outline";
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -11,67 +11,79 @@ export default function ProductGallery({
   imageUrls: string[];
 }) {
   const [selectedIdx, setSelectedIdx] = useState(0);
-  const [startIdx, setStartIdx] = useState(0);
-  const maxThumbnails = 4;
-  const canScrollLeft = startIdx > 0 && imageUrls.length > maxThumbnails;
-  const canScrollRight =
-    imageUrls.length > maxThumbnails &&
-    startIdx + maxThumbnails < imageUrls.length;
-  const visibleThumbnails = imageUrls.slice(startIdx, startIdx + maxThumbnails);
+
+  const goToPrev = () => {
+    setSelectedIdx((prev) => (prev - 1 + imageUrls.length) % imageUrls.length);
+  };
+  const goToNext = () => {
+    setSelectedIdx((prev) => (prev + 1) % imageUrls.length);
+  };
 
   return (
-    <div className="grid md:grid-cols-5 gap-3">
-      <div className="md:col-span-10">
-        <Image
-          alt={name}
-          className="object-cover object-top rounded-t-lg w-full"
-          src={imageUrls[selectedIdx]}
-          height={350}
-          width={350}
-        />
-        <div className="flex items-center gap-2 justify-center mt-4">
-          {imageUrls.length > maxThumbnails && (
-            <button
-              className="p-2 bg-white rounded-full shadow border mr-2 disabled:opacity-30"
-              onClick={() => setStartIdx(startIdx - 1)}
-              aria-label="Scroll thumbnails left"
-              disabled={!canScrollLeft}
-            >
-              &#8592;
-            </button>
-          )}
-          {visibleThumbnails.map((url: string, idx: number) => (
-            <button
-              key={url + idx + startIdx}
-              onClick={() => setSelectedIdx(startIdx + idx)}
-              aria-label={`Show image ${startIdx + idx + 1}`}
-              className={
-                (selectedIdx === startIdx + idx
-                  ? "ring-2 ring-blue-500 "
-                  : "") + "rounded"
-              }
-            >
-              <Image
-                alt={name + " thumbnail " + (startIdx + idx + 1)}
-                src={url}
-                width={100}
-                height={100}
-                className="rounded border object-cover shadow-md"
-              />
-            </button>
-          ))}
-          {imageUrls.length > maxThumbnails && (
-            <button
-              className="p-2 bg-white rounded-full shadow border ml-2 disabled:opacity-30"
-              onClick={() => setStartIdx(startIdx + 1)}
-              aria-label="Scroll thumbnails right"
-              disabled={!canScrollRight}
-            >
-              &#8594;
-            </button>
-          )}
-        </div>
+    <div className="flex flex-col items-center w-full max-w-full">
+      <div className="relative aspect-square h-full max-h-[550px] w-full overflow-hidden flex flex-col items-center">
+        {imageUrls[selectedIdx] && (
+          <Image
+            className="h-full w-full object-contain"
+            fill
+            sizes="(min-width: 1024px) 66vw, 100vw"
+            alt={name + " image " + (selectedIdx + 1)}
+            src={imageUrls[selectedIdx]}
+            priority={true}
+          />
+        )}
       </div>
+
+      {/* Navigation arrows below the main image, above thumbnails */}
+      {imageUrls.length > 1 && (
+        <div className="flex w-full justify-center my-4 pointer-events-auto">
+          <div className="mx-auto flex h-11 items-center rounded-full border border-white bg-neutral-50/80 text-neutral-500 backdrop-blur dark:border-black dark:bg-neutral-900/80">
+            <button
+              aria-label="Previous product image"
+              onClick={goToPrev}
+              className="h-full px-6 transition-all ease-in-out hover:scale-110 hover:text-black dark:hover:text-white flex items-center justify-center"
+            >
+              <ArrowLeftIcon className="h-5" />
+            </button>
+            <div className="mx-1 h-6 w-px bg-neutral-500"></div>
+            <button
+              aria-label="Next product image"
+              onClick={goToNext}
+              className="h-full px-6 transition-all ease-in-out hover:scale-110 hover:text-black dark:hover:text-white flex items-center justify-center"
+            >
+              <ArrowRightIcon className="h-5" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Thumbnails below the main image */}
+      {imageUrls.length > 1 && (
+        <ul className="flex items-center justify-center gap-2 py-1 mt-8 mb-10 z-20">
+          {imageUrls.map((url, index) => (
+            <li
+              key={url + index}
+              className="h-20 w-20 flex items-center justify-center"
+            >
+              <button
+                aria-label={`Show image ${index + 1}`}
+                onClick={() => setSelectedIdx(index)}
+                className="h-full w-full flex items-center justify-center"
+              >
+                <Image
+                  alt={name + " thumbnail " + (index + 1)}
+                  src={url}
+                  width={80}
+                  height={80}
+                  className={`rounded border object-contain shadow-md ${
+                    selectedIdx === index ? "ring-2 ring-blue-500" : ""
+                  }`}
+                />
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
