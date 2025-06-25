@@ -25,18 +25,18 @@
         "colorName": "Black",
         "size": 3,
         "imageUrls": ["/images/products/hoodie-oslo.webp"],
-        "stock": 2
+        "stock": 1
       },
       {
         "id": 1011,
-        "colorName": "Black",
+        "colorName": "Pink",
         "size": 3,
         "imageUrls": ["/images/products/hoodie-oslo-2.png"],
-        "stock": 2
+        "stock": 1
       },
       {
         "id": 1012,
-        "colorName": "Black",
+        "colorName": "White",
         "size": 3,
         "imageUrls": ["/images/products/hoodie-viking.webp"],
         "stock": 2
